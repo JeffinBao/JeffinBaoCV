@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        
+    <com.jeffinbaocv.app.StickyScrollView
+        android:id="@+id/myscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:fillViewport="true" > 
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"> 
+            
+            <TextView 
+                android:id="@+id/textview_title_maintask"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:tag="sticky"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20sp" 
+                android:background="#673ab7"/>  
+            
+            <com.jeffinbaocv.app.MyListView
+                android:id="@+id/listview_maintask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:focusable="false" >
+                
+            </com.jeffinbaocv.app.MyListView>
+            
+            <TextView 
+	              android:id="@+id/textview_titile_performance"
+	              android:layout_width="match_parent"
+	              android:layout_height="50dp"
+	              android:paddingLeft="20dp"
+	              android:gravity="center_vertical"
+	              android:tag="sticky"
+	              android:textColor="#ffffff"
+	              android:textStyle="bold"
+	              android:textSize="20sp"
+	              android:background="#448aff"/>
+            
+            <com.jeffinbaocv.app.MyListView 
+                android:id="@+id/listview_performance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:focusable="false" >
+                
+            </com.jeffinbaocv.app.MyListView>
+
+         </LinearLayout>
+
+    </com.jeffinbaocv.app.StickyScrollView>
+</LinearLayout>

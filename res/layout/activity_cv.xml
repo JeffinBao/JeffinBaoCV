@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:background="#673ab7"/>
+    
+    <ScrollView
+        android:id="@+id/scrollview_cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginTop="10dp">
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:gravity="center" 
+		            android:text="起"
+		            android:textColor="#ffffff"
+		            android:background="@drawable/textview_begin_dot" />
+		        
+		        <Button
+		            android:id="@+id/button_1"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="9"           
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="15dp"
+		            android:text="中国 · 浙江 · 台州 · 临海 (1991--2009)"
+		            android:textSize="16sp"
+		            android:textColor="#616161"
+		            android:textStyle="bold"
+		            android:background="@drawable/imagebutton_cv_selector"/>
+		        
+		        <ImageButton
+		            android:id="@+id/imagebutton_forward_1"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_gravity="center"
+		            android:src="@drawable/ic_action_next_item_grey"
+		            android:background="@drawable/imagebutton_cv_selector" />
+		    </LinearLayout>
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:orientation="horizontal" >
+		                
+		        <TextView
+		            android:layout_width="35dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:gravity="center"
+		            android:text="学习"
+		            android:textSize="14sp"
+		            android:textColor="#ffffff"
+		            android:background="#4caf50" />
+		                
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:layout_gravity="center_vertical"
+		            android:text="完成小学、初中、高中三个阶段的学习"
+		            android:textColor="#616161"
+		            android:textSize="14sp"
+		                />
+		    </LinearLayout>
+		
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="10dp">
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:gravity="center" 
+		            android:text="行"
+		            android:textColor="#ffffff"
+		            android:background="@drawable/textview_onroad_dot" />
+		        
+		        <Button
+		            android:id="@+id/button_2"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="15dp"
+		            android:text="中国 · 辽宁 · 大连 (2009--2013)"
+		            android:textSize="16sp"
+		            android:textColor="#616161"
+		            android:textStyle="bold"
+		            android:background="@drawable/imagebutton_cv_selector" />
+		        
+		        <ImageButton
+		            android:id="@+id/imagebutton_forward_2"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_gravity="center"
+		            android:src="@drawable/ic_action_next_item_grey"
+		            android:background="@drawable/imagebutton_cv_selector" />
+		
+		    </LinearLayout>
+		 
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="2"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:orientation="horizontal" >
+		                
+		        <TextView
+		            android:layout_width="35dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:gravity="center"
+		            android:text="学习"
+		            android:textSize="14sp"
+		            android:textColor="#ffffff"
+		            android:background="#4caf50" />
+		        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:orientation="vertical">
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="0dp"
+		                android:layout_weight="1"
+		                android:layout_marginLeft="10dp"
+		                android:gravity="center_vertical"
+		                android:text="大连海事大学 · 通信工程 · 本科"
+		                android:textColor="#616161"
+		                android:textSize="14sp"
+		                />
+		
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="0dp"
+		                android:layout_weight="1"
+		                android:layout_marginLeft="10dp"	                
+		                android:gravity="center_vertical"
+		                android:text="IBM · 英语商务支持 · 实习生 (2012.10)"
+		                android:textColor="#616161"
+		                android:textSize="14sp"
+		                />
+		        </LinearLayout>
+		    </LinearLayout>
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="10dp">
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:gravity="center" 
+		            android:text="行"
+		            android:textColor="#ffffff"
+		            android:background="@drawable/textview_onroad_dot" />
+		        
+		        <Button
+		            android:id="@+id/button_3"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="15dp"
+		            android:text="中国 · 广东 · 深圳 · 南山 (2013--2014)"
+		            android:textSize="16sp"
+		            android:textColor="#616161"
+		            android:textStyle="bold"
+		            android:background="@drawable/imagebutton_cv_selector" />
+		        
+		        <ImageButton
+		            android:id="@+id/imagebutton_forward_3"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_gravity="center"
+		            android:src="@drawable/ic_action_next_item_grey"
+		            android:background="@drawable/imagebutton_cv_selector" />
+		        
+		    </LinearLayout>
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+		
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="2"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:orientation="horizontal" >
+		                
+		        <TextView
+		            android:layout_width="35dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:gravity="center"
+		            android:text="工作"
+		            android:textSize="14sp"
+		            android:textColor="#ffffff"
+		            android:background="#ff5722" />
+		        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:orientation="vertical">
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="0dp"
+		                android:layout_weight="1"
+		                android:layout_marginLeft="10dp"	                
+		                android:gravity="center_vertical"
+		                android:text="海能达通信股份有限公司 · 实习"
+		                android:textColor="#616161"
+		                android:textSize="14sp"
+		                />
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="0dp"
+		                android:layout_weight="1"
+		                android:layout_marginLeft="10dp"	                
+		                android:gravity="center_vertical"
+		                android:text="海能达通信股份有限公司 · 海外技术支持"
+		                android:textColor="#616161"
+		                android:textSize="14sp"
+		                />
+		
+		        </LinearLayout>
+		    </LinearLayout>
+		
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+		        
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="10dp">
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:gravity="center" 
+		            android:text="行"
+		            android:textColor="#ffffff"
+		            android:background="@drawable/textview_onroad_dot" />
+		        
+		        <Button
+		            android:id="@+id/button_4"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="15dp"
+		            android:text="印度 · 斋浦尔-德里等 (2014)"
+		            android:textSize="16sp"
+		            android:textColor="#616161"
+		            android:textStyle="bold"
+		            android:background="@drawable/imagebutton_cv_selector" />
+		        
+		        <ImageButton
+		            android:id="@+id/imagebutton_forward_4"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_gravity="center"
+		            android:src="@drawable/ic_action_next_item_grey"
+		            android:background="@drawable/imagebutton_cv_selector" />
+		        
+		    </LinearLayout>
+		 
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="2"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:orientation="horizontal" >
+		                
+		        <TextView
+		            android:layout_width="35dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:gravity="center"
+		            android:text="工作"
+		            android:textSize="14sp"
+		            android:textColor="#ffffff"
+		            android:background="#ff5722" />
+		        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:orientation="vertical">
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="0dp"
+		                android:layout_weight="1"
+		                android:layout_marginLeft="10dp"		                
+		                android:gravity="center_vertical"
+		                android:text="海能达 · 印度地铁无线通信项目 · 项目经理"
+		                android:textColor="#616161"
+		                android:textSize="14sp"
+		                />
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="0dp"
+		                android:layout_weight="1"
+		                android:layout_marginLeft="10dp"		                
+		                android:gravity="center_vertical"
+		                android:text="海能达 · 印度市场 · 解决方案经理"
+		                android:textColor="#616161"
+		                android:textSize="14sp"
+		                />
+		
+		        </LinearLayout>
+		    </LinearLayout>
+		 
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="10dp">
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:gravity="center" 
+		            android:text="行"
+		            android:textColor="#ffffff"
+		            android:background="@drawable/textview_onroad_dot" />
+		        
+		        <Button
+		            android:id="@+id/button_5"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="15dp"
+		            android:text="尼泊尔 · 加德满都 (2014)"
+		            android:textSize="16sp"
+		            android:textColor="#616161"
+		            android:textStyle="bold"
+		            android:background="@drawable/imagebutton_cv_selector" />
+		        
+		        <ImageButton
+		            android:id="@+id/imagebutton_forward_5"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_gravity="center"
+		            android:src="@drawable/ic_action_next_item_grey"
+		            android:background="@drawable/imagebutton_cv_selector" />
+		        
+		    </LinearLayout>
+		
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:orientation="horizontal" >
+		                
+		        <TextView
+		            android:layout_width="35dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:gravity="center"
+		            android:text="工作"
+		            android:textSize="14sp"
+		            android:textColor="#ffffff"
+		            android:background="#ff5722" />
+		          
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:layout_gravity="center_vertical"
+		            android:text="海能达 · 尼泊尔市场 · 技术支持"
+		            android:textColor="#616161"
+		            android:textSize="14sp"/>
+		        
+		    </LinearLayout>
+		 
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="10dp">
+		        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:gravity="center" 
+		            android:text="行"
+		            android:textColor="#ffffff"
+		            android:background="@drawable/textview_onroad_dot" />
+		        
+		        <Button
+		            android:id="@+id/button_6"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="15dp"
+		            android:text="中国 · 广东 · 深圳 · 龙华 (2014--至今)"
+		            android:textSize="16sp"
+		            android:textColor="#616161"
+		            android:textStyle="bold"
+		            android:background="@drawable/imagebutton_cv_selector"/>
+		        
+		        <ImageButton
+		            android:id="@+id/imagebutton_forward_6"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_gravity="center"
+		            android:src="@drawable/ic_action_next_item_grey"
+		            android:background="@drawable/imagebutton_cv_selector" />
+		        
+		    </LinearLayout>
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="2"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:orientation="horizontal" >
+		                
+		        <TextView
+		            android:layout_width="35dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:gravity="center"
+		            android:text="学习"
+		            android:textSize="14sp"
+		            android:textColor="#ffffff"
+		            android:background="#4caf50" />
+		        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:orientation="vertical">
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="0dp"
+		                android:layout_weight="1"
+		                android:layout_marginLeft="10dp"	                
+		                android:gravity="center_vertical"
+		                android:text="自学Java语言"
+		                android:textColor="#616161"
+		                android:textSize="14sp"
+		                />
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="0dp"
+		                android:layout_weight="1"
+		                android:layout_marginLeft="10dp"		                
+		                android:gravity="center_vertical"
+		                android:text="自学Android语言"
+		                android:textColor="#616161"
+		                android:textSize="14sp"
+		                />
+		
+		        </LinearLayout>
+		    </LinearLayout>
+		 
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.25" />
+
+        </LinearLayout>
+    </ScrollView>
+	         
+</LinearLayout>

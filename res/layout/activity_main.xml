@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/amap_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+        
+            <EditText
+               android:id="@+id/edittext_name"
+               android:layout_width="0dp"
+               android:layout_height="50dp"
+               android:layout_weight="4"
+               android:hint="请输入‘包建峰’进行搜索"
+               android:textColorHint="#673ab7"
+               android:gravity="center"
+               android:textColor="#616161"
+               android:background="@drawable/edittext_layerlist" />
+        
+            <Button 
+               android:id="@+id/button_search"
+               android:layout_width="0dp"
+               android:layout_height="50dp"
+               android:layout_weight="1"
+               android:text="搜索"
+               android:textColor="#FFFFFF"
+               android:gravity="center"
+               android:background="@drawable/button_search_selector"/>
+        
+        </LinearLayout>       
+        
+        <Button 
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="出发"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_start_selector"/>    
+        
+    </RelativeLayout>
+
+</RelativeLayout>
