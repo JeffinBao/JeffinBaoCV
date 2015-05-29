@@ -1,7 +1,6 @@
 package com.jeffinbaocv.app;
 
 import com.amap.api.maps.AMap;
-import com.amap.api.maps.AMap.CancelableCallback;
 import com.amap.api.maps.CameraUpdateFactory;
 import com.amap.api.maps.MapView;
 import com.amap.api.maps.model.ArcOptions;
@@ -65,7 +64,7 @@ public class MainActivity extends Activity {
         aMap=mapView.getMap();
 
 		aMap.moveCamera(CameraUpdateFactory
-				.newCameraPosition(new CameraPosition(new LatLng(34.3492,98.0243), 4f, 0f, 0)));
+				.newCameraPosition(new CameraPosition(new LatLng(34.3492,100.0243), 4f, 0f, 0)));
         
         editTextName=(EditText)findViewById(R.id.edittext_name);
         buttonStart=(Button)findViewById(R.id.button_start);
@@ -158,7 +157,7 @@ public class MainActivity extends Activity {
 	private static void setUpMap(){
 		
 		aMap.animateCamera(CameraUpdateFactory
-				.newLatLngZoom(new LatLng(34.3492,98.0243), 4.3f), 2000, null);
+				.newLatLngZoom(new LatLng(34.3492,100.0243), 4.1f), 2000, null);
 		
 		aMap.addArc((new ArcOptions())
 				.point(UtilConstants.LINHAI,new LatLng(34.3981,122.6302),UtilConstants.DALIAN)

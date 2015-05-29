@@ -1,15 +1,13 @@
 package com.jeffinbaocv.app;
 
-import java.util.ArrayList;
 
 import com.amap.api.maps.AMap;
-import com.amap.api.maps.AMap.CancelableCallback;
 import com.amap.api.maps.CameraUpdateFactory;
 import com.amap.api.maps.MapView;
-import com.amap.api.maps.model.ArcOptions;
-import com.amap.api.maps.model.BitmapDescriptor;
 import com.amap.api.maps.model.BitmapDescriptorFactory;
 import com.amap.api.maps.model.CameraPosition;
+import com.amap.api.maps.model.Circle;
+import com.amap.api.maps.model.CircleOptions;
 import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.Marker;
 import com.amap.api.maps.model.MarkerOptions;
@@ -44,6 +42,8 @@ public class CvMapActivity extends Activity {
 	private ViewPager viewPager;
 	private PageAdapter pageAdapter;
 	private Marker marker;
+	private Circle circleBig;
+	private Circle circleSmall;
 	
 	private int currentPageId=0;
 	private int selectPage=0;
@@ -92,6 +92,12 @@ public class CvMapActivity extends Activity {
         marker=aMap.addMarker(new MarkerOptions().position(new LatLng(lat,lng))
         		.icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_action_place_red))
         		.anchor(0.5f, 0.8f));
+        circleBig=aMap.addCircle(new CircleOptions().center(new LatLng(lat,lng))
+        		.fillColor(Color.parseColor("#7f448aff"))
+        		.radius(10000).strokeWidth(0f));
+        circleSmall=aMap.addCircle(new CircleOptions().center(new LatLng(lat,lng))
+        		.fillColor(Color.parseColor("#448aff"))
+        		.radius(1500).strokeWidth(2f).strokeColor(Color.parseColor("#ffffff")));
 		aMap.moveCamera(CameraUpdateFactory
 				.newCameraPosition(new CameraPosition(new LatLng(34.3492,98.0243), 10f, 0f, 0)));
 		aMap.animateCamera(CameraUpdateFactory
@@ -154,10 +160,17 @@ public class CvMapActivity extends Activity {
 	    		cursorCurrent.close();
 
 	    		marker.destroy();
+	    		circleBig.remove();
+	    		circleSmall.remove();
 	            marker=aMap.addMarker(new MarkerOptions().position(new LatLng(lat,lng))
 	            		.icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_action_place_red))
 	            		.anchor(0.5f, 0.8f));
-
+	            circleBig=aMap.addCircle(new CircleOptions().center(new LatLng(lat,lng))
+	            		.fillColor(Color.parseColor("#7f448aff"))
+	            		.radius(10000).strokeWidth(0f));
+	            circleSmall=aMap.addCircle(new CircleOptions().center(new LatLng(lat,lng))
+	            		.fillColor(Color.parseColor("#448aff"))
+	            		.radius(1500).strokeWidth(2f).strokeColor(Color.parseColor("#ffffff")));
 	    		aMap.animateCamera(CameraUpdateFactory
 	    				.newLatLngZoom(new LatLng(lat,lng),9.9f),1500,null);
 	    		aMap.setOnMarkerClickListener(new AMap.OnMarkerClickListener() {

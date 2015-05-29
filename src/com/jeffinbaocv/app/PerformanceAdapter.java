@@ -2,8 +2,6 @@ package com.jeffinbaocv.app;
 
 import java.util.List;
 
-import com.jeffinbaocv.app.MainTaskAdapter.ViewHolder;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

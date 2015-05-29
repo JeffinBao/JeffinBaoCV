@@ -27,9 +27,8 @@
 
 		    <LinearLayout
 		        android:layout_width="match_parent"
-		        android:layout_height="30dp"
-		        android:layout_marginLeft="10dp"
-		        android:layout_marginTop="10dp">
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp">
 		        
 		        <TextView
 		            android:layout_width="wrap_content"
@@ -63,11 +62,6 @@
 		            android:background="@drawable/imagebutton_cv_selector" />
 		    </LinearLayout>
 		    
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
-		    
 		    <LinearLayout 
 		        android:layout_width="match_parent"
 		        android:layout_height="0dp"
@@ -96,15 +90,10 @@
 		            android:textSize="14sp"
 		                />
 		    </LinearLayout>
-		
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
 		    
 		    <LinearLayout
 		        android:layout_width="match_parent"
-		        android:layout_height="30dp"
+		        android:layout_height="wrap_content"
 		        android:layout_marginLeft="10dp">
 		        
 		        <TextView
@@ -139,11 +128,6 @@
 		            android:background="@drawable/imagebutton_cv_selector" />
 		
 		    </LinearLayout>
-		 
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
 		    
 		    <LinearLayout 
 		        android:layout_width="match_parent"
@@ -165,7 +149,7 @@
 		        
 		        <LinearLayout 
 		            android:layout_width="match_parent"
-		            android:layout_height="match_parent"
+		            android:layout_height="wrap_content"
 		            android:orientation="vertical">
 		            
 		            <TextView 
@@ -183,7 +167,8 @@
 		                android:layout_width="wrap_content"
 		                android:layout_height="0dp"
 		                android:layout_weight="1"
-		                android:layout_marginLeft="10dp"	                
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginTop="8dp"	                
 		                android:gravity="center_vertical"
 		                android:text="IBM · 英语商务支持 · 实习生 (2012.10)"
 		                android:textColor="#616161"
@@ -191,15 +176,10 @@
 		                />
 		        </LinearLayout>
 		    </LinearLayout>
-		    
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
-		    
+
 		    <LinearLayout
 		        android:layout_width="match_parent"
-		        android:layout_height="30dp"
+		        android:layout_height="wrap_content"
 		        android:layout_marginLeft="10dp">
 		        
 		        <TextView
@@ -235,11 +215,7 @@
 		        
 		    </LinearLayout>
 		    
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
-		
+
 		    <LinearLayout 
 		        android:layout_width="match_parent"
 		        android:layout_height="0dp"
@@ -260,7 +236,7 @@
 		        
 		        <LinearLayout 
 		            android:layout_width="match_parent"
-		            android:layout_height="match_parent"
+		            android:layout_height="wrap_content"
 		            android:orientation="vertical">
 		            
 		            <TextView 
@@ -278,7 +254,8 @@
 		                android:layout_width="wrap_content"
 		                android:layout_height="0dp"
 		                android:layout_weight="1"
-		                android:layout_marginLeft="10dp"	                
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginTop="8dp"	                
 		                android:gravity="center_vertical"
 		                android:text="海能达通信股份有限公司 · 海外技术支持"
 		                android:textColor="#616161"
@@ -288,14 +265,9 @@
 		        </LinearLayout>
 		    </LinearLayout>
 		
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
-		        
 		    <LinearLayout
 		        android:layout_width="match_parent"
-		        android:layout_height="30dp"
+		        android:layout_height="wrap_content"
 		        android:layout_marginLeft="10dp">
 		        
 		        <TextView
@@ -331,11 +303,7 @@
 		        
 		    </LinearLayout>
 		 
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
-		    
+
 		    <LinearLayout 
 		        android:layout_width="match_parent"
 		        android:layout_height="0dp"
@@ -356,7 +324,7 @@
 		        
 		        <LinearLayout 
 		            android:layout_width="match_parent"
-		            android:layout_height="match_parent"
+		            android:layout_height="wrap_content"
 		            android:orientation="vertical">
 		            
 		            <TextView 
@@ -374,7 +342,8 @@
 		                android:layout_width="wrap_content"
 		                android:layout_height="0dp"
 		                android:layout_weight="1"
-		                android:layout_marginLeft="10dp"		                
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginTop="8dp"		                
 		                android:gravity="center_vertical"
 		                android:text="海能达 · 印度市场 · 解决方案经理"
 		                android:textColor="#616161"
@@ -383,15 +352,10 @@
 		
 		        </LinearLayout>
 		    </LinearLayout>
-		 
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
-		    
+		
 		    <LinearLayout
 		        android:layout_width="match_parent"
-		        android:layout_height="30dp"
+		        android:layout_height="wrap_content"
 		        android:layout_marginLeft="10dp">
 		        
 		        <TextView
@@ -426,12 +390,7 @@
 		            android:background="@drawable/imagebutton_cv_selector" />
 		        
 		    </LinearLayout>
-		
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
-		    
+		 
 		    <LinearLayout 
 		        android:layout_width="match_parent"
 		        android:layout_height="0dp"
@@ -460,15 +419,10 @@
 		            android:textSize="14sp"/>
 		        
 		    </LinearLayout>
-		 
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
 		    
 		    <LinearLayout
 		        android:layout_width="match_parent"
-		        android:layout_height="30dp"
+		        android:layout_height="wrap_content"
 		        android:layout_marginLeft="10dp">
 		        
 		        <TextView
@@ -504,11 +458,6 @@
 		        
 		    </LinearLayout>
 		    
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
-		    
 		    <LinearLayout 
 		        android:layout_width="match_parent"
 		        android:layout_height="0dp"
@@ -529,7 +478,7 @@
 		        
 		        <LinearLayout 
 		            android:layout_width="match_parent"
-		            android:layout_height="match_parent"
+		            android:layout_height="wrap_content"
 		            android:orientation="vertical">
 		            
 		            <TextView 
@@ -547,7 +496,8 @@
 		                android:layout_width="wrap_content"
 		                android:layout_height="0dp"
 		                android:layout_weight="1"
-		                android:layout_marginLeft="10dp"		                
+		                android:layout_marginLeft="10dp"	
+		                android:layout_marginTop="8dp"	                
 		                android:gravity="center_vertical"
 		                android:text="自学Android语言"
 		                android:textColor="#616161"
@@ -556,11 +506,7 @@
 		
 		        </LinearLayout>
 		    </LinearLayout>
-		 
-		    <TextView
-		        android:layout_width="match_parent"
-		        android:layout_height="0dp"
-		        android:layout_weight="0.25" />
+
 
         </LinearLayout>
     </ScrollView>
